@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Secrets — never commit any of these
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+wallet*.json
+data/wallet*.json
+**/feed-private*.json
+**/*private-key*.json
+gift-code*.txt
+gift*.txt
+
+# Local state (untracked operator state)
+.state/
+feed.json
+config/local-config.json
+evidence/live-*.json
+
+# Logs / OS
+*.log
+.DS_Store

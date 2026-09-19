@@ -1,0 +1,35 @@
+{
+  "name": "roadtodevconv-problem3-succession",
+  "version": "0.1.0",
+  "description": "The Succession Nobody Wrote Down — Swarm catalogue with separated funding/publishing/succession roles and a stable reader root (bee-js v13, offline-verified; live gated)",
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "node scripts/build.js",
+    "test": "node --test tests/catalogue.test.js tests/succession.test.js tests/storage.test.js tests/secrets.test.js tests/handoff-evidence.test.js",
+    "test:live": "node --test tests/live.test.js",
+    "lint": "node scripts/lint.js",
+    "inspect": "node src/cli.js inspect",
+    "catalogue:validate": "node src/cli.js catalogue:validate",
+    "catalogue:publish": "node src/cli.js catalogue:publish",
+    "succession:prepare": "node src/cli.js succession:prepare",
+    "succession:handoff": "node src/cli.js succession:handoff",
+    "succession:verify": "node src/cli.js succession:verify",
+    "storage:inspect": "node src/cli.js storage:inspect",
+    "storage:extend": "node src/cli.js storage:extend",
+    "storage:topup": "node src/cli.js storage:topup",
+    "reader:resolve": "node src/cli.js reader:resolve",
+    "secrets:scan": "node scripts/secret-scan.js",
+    "identities:generate": "node scripts/generate-identities.js",
+    "demo:offline": "node scripts/demo-offline.js",
+    "check:bee": "node scripts/check-bee.js",
+    "check:batch": "node scripts/check-batch.js"
+  },
+  "dependencies": {
+    "@ethersphere/bee-js": "13.1.0",
+    "dotenv": "18.0.1"
+  },
+  "license": "MIT"
+}

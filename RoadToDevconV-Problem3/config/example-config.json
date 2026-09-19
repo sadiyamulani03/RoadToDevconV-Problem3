@@ -1,0 +1,26 @@
+{
+  "$comment": "PUBLIC placeholder identities only — replace with real addresses before live use. No private keys, mnemonics, gift codes or authenticated URLs here. Private keys come from environment variables (see .env.example).",
+  "reader": {
+    "rootOwner": "0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "rootTopic": "monastery-catalogue-root-v1",
+    "_comment": "READER_ROOT = (rootOwner, rootTopic). This pair NEVER changes across publisher rotation. rootOwner must equal successionAuthority.address (the authority owns the root feed)."
+  },
+  "funding": {
+    "address": "0xffffffffffffffffffffffffffffffffffffffff",
+    "_comment": "Owns/manages postage batches. Must differ from publisher.address and successionAuthority.address."
+  },
+  "publisher": {
+    "address": "0x2222222222222222222222222222222222222222",
+    "topic": "monastery-catalogue-pub-v1",
+    "_comment": "Current publisher. Signs catalogue feed updates. Rotated by the succession authority, never by itself."
+  },
+  "successionAuthority": {
+    "address": "0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "rootTopic": "monastery-catalogue-root-v1",
+    "_comment": "Owns the root feed. The ONLY identity that can authorise a publisher change."
+  },
+  "bee": {
+    "url": "http://localhost:1633",
+    "_comment": "Readers need only this URL plus the reader.rootOwner/rootTopic pair."
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "schema": "succession-handoff-log/1",
+  "live": null,
+  "offline": [
+    {
+      "schema": "succession-handoff/1",
+      "mechanism": "root-feed-authority-pointer",
+      "previousPublisher": "0x1efb9ed96f9a1f4ed4eda35d2921f2e4ebada1fb",
+      "incomingPublisher": "0x16c9a16b8fe89c85bca6c48ec59ccbd05626bfc1",
+      "rootOwner": "0x25d8af045fab7d454a3bab27417a909c85a9a1d3",
+      "rootTopic": "monastery-catalogue-root-v1",
+      "feedIndex": 1,
+      "successionVersion": 2,
+      "authorisedAt": "2026-09-19T07:43:53.076Z",
+      "verification": {
+        "authorityOwnsRoot": true,
+        "authorityDistinctFromPublisher": true,
+        "pointerAuthorisedByRootOwner": true,
+        "expectedPublisherMatches": true
+      },
+      "verificationMethod": "verifyAuthority: root-feed owner == authority; authorisedBy == root owner; publisher != authority; expected publisher matches",
+      "commands": [
+        "node src/cli.js succession:handoff --incoming-address 0x16c9a16b8fe89c85bca6c48ec59ccbd05626bfc1"
+      ],
+      "live": {
+        "executed": false,
+        "status": "pending",
+        "note": "Offline demonstration only. Re-run against a live Bee node to attach live evidence (tx hash, feed index, manifest)."
+      }
+    },
+    {
+      "schema": "succession-handoff/1",
+      "mechanism": "root-feed-authority-pointer",
+      "previousPublisher": "0x16c9a16b8fe89c85bca6c48ec59ccbd05626bfc1",
+      "incomingPublisher": "0x344aa90044dc0e1d7af0a8c1fe64b2bec7782cfe",
+      "rootOwner": "0x25d8af045fab7d454a3bab27417a909c85a9a1d3",
+      "rootTopic": "monastery-catalogue-root-v1",
+      "feedIndex": 2,
+      "successionVersion": 3,
+      "authorisedAt": "2026-09-19T07:45:44.901Z",
+      "verification": {
+        "authorityOwnsRoot": true,
+        "authorityDistinctFromPublisher": true,
+        "pointerAuthorisedByRootOwner": true,
+        "expectedPublisherMatches": true
+      },
+      "verificationMethod": "verifyAuthority: root-feed owner == authority; authorisedBy == root owner; publisher != authority; expected publisher matches",
+      "commands": [
+        "node src/cli.js succession:handoff --incoming-address 0x344aa90044dc0e1d7af0a8c1fe64b2bec7782cfe"
+      ],
+      "live": {
+        "executed": false,
+        "status": "pending",
+        "note": "Offline demonstration only. Re-run against a live Bee node to attach live evidence (tx hash, feed index, manifest)."
+      }
+    }
+  ]
+}

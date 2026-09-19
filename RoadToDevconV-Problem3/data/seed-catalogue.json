@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "catalogueVersion": 1,
+  "updatedAt": "2026-09-01T00:00:00.000Z",
+  "libraries": [
+    {
+      "monasteryId": "DEMO-MONASTERY-01",
+      "collectionId": "kangyur-demo-01",
+      "responsibleInstitution": "Demo Committee 01 (placeholder)",
+      "folios": [
+        { "folioId": "DM01-K001-F001", "condition": "good", "damaged": false, "missing": false, "photographed": true, "notes": "Seed entry v1." },
+        { "folioId": "DM01-K001-F002", "condition": "fair", "damaged": false, "missing": false, "photographed": true },
+        { "folioId": "DM01-K001-F003", "condition": "fragile", "damaged": true, "missing": false, "photographed": false, "notes": "Handle with care." }
+      ]
+    },
+    {
+      "monasteryId": "DEMO-MONASTERY-02",
+      "collectionId": "tengyur-demo-02",
+      "responsibleInstitution": "Demo Committee 02 (placeholder)",
+      "folios": [
+        { "folioId": "DM02-T001-F001", "condition": "excellent", "damaged": false, "missing": false, "photographed": true },
+        { "folioId": "DM02-T001-F002", "condition": "good", "damaged": false, "missing": false, "photographed": false }
+      ]
+    },
+    {
+      "monasteryId": "DEMO-MONASTERY-03",
+      "collectionId": "manuscripts-demo-03",
+      "responsibleInstitution": "Demo Committee 03 (placeholder)",
+      "folios": [
+        { "folioId": "DM03-M001-F001", "condition": "fair", "damaged": false, "missing": false, "photographed": true },
+        { "folioId": "DM03-M001-F002", "condition": "poor", "damaged": true, "missing": false, "photographed": false }
+      ]
+    },
+    {
+      "monasteryId": "DEMO-MONASTERY-04",
+      "collectionId": "ritual-demo-04",
+      "responsibleInstitution": "Demo Committee 04 (placeholder)",
+      "folios": [
+        { "folioId": "DM04-R001-F001", "condition": "good", "damaged": false, "missing": false, "photographed": true },
+        { "folioId": "DM04-R001-F002", "condition": "critical", "damaged": true, "missing": false, "photographed": false, "notes": "Conservation priority." }
+      ]
+    },
+    {
+      "monasteryId": "DEMO-MONASTERY-05",
+      "collectionId": "history-demo-05",
+      "responsibleInstitution": "Demo Committee 05 (placeholder)",
+      "folios": [
+        { "folioId": "DM05-H001-F001", "condition": "good", "damaged": false, "missing": false, "photographed": true },
+        { "folioId": "DM05-H001-F002", "condition": "fair", "damaged": false, "missing": true, "photographed": false, "notes": "Reported missing; do not mark photographed." }
+      ]
+    },
+    {
+      "monasteryId": "DEMO-MONASTERY-06",
+      "collectionId": "medicine-demo-06",
+      "responsibleInstitution": "Demo Committee 06 (placeholder)",
+      "folios": [
+        { "folioId": "DM06-D001-F001", "condition": "excellent", "damaged": false, "missing": false, "photographed": true },
+        { "folioId": "DM06-D001-F002", "condition": "good", "damaged": false, "missing": false, "photographed": true }
+      ]
+    },
+    {
+      "monasteryId": "DEMO-MONASTERY-07",
+      "collectionId": "art-demo-07",
+      "responsibleInstitution": "Demo Committee 07 (placeholder)",
+      "folios": [
+        { "folioId": "DM07-A001-F001", "condition": "fair", "damaged": false, "missing": false, "photographed": false },
+        { "folioId": "DM07-A001-F002", "condition": "good", "damaged": false, "missing": false, "photographed": true }
+      ]
+    }
+  ]
+}
