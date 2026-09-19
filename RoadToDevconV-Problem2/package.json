@@ -1,0 +1,17 @@
+{
+  "name": "roadtodevconV-problem2-deccan-birders",
+  "version": "1.0.0",
+  "description": "Road to Devcon V Problem 2 — Deccan Birders sighting on Swarm via subsidised gateway (bytes family, capability-gated, independent reader)",
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "node scripts/audit.js",
+    "test": "node --test tests/unit.test.js",
+    "audit": "node scripts/audit.js",
+    "writer": "node writer/cli.js --help",
+    "reader": "node reader/cli.js --help"
+  },
+  "license": "MIT"
+}

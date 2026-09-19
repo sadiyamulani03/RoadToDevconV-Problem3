@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Deccan Birders — Independent Reader</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Deccan Birders — Independent Reader</h1>
+    <p class="muted">
+      Standalone reader with its own entrypoint. It reaches Swarm directly,
+      downloads through the same <code>/bytes</code> family used when storing,
+      parses the portable record, validates <code>format</code>/<code>version</code>,
+      and renders — without importing any authoring-side code. The only shared module is
+      <code>../shared/format.js</code> (standalone schema).
+    </p>
+    <form id="reader-form">
+      <label>Swarm reference (64-hex)
+        <input id="ref-input" required minlength="64" maxlength="64" placeholder="Paste reference from the uploader" spellcheck="false" />
+      </label>
+      <button id="load-btn" type="submit">Download &amp; render</button>
+    </form>
+    <div id="reader-error" class="error" role="alert" hidden></div>
+    <div id="reader-result" class="ok" role="status" hidden></div>
+    <p class="muted">
+      The authoring app lives separately at <code>../writer/index.html</code>. This page shares no
+      components, storage helpers, or rendering code with it.
+    </p>
+  </main>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

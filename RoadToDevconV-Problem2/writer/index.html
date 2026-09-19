@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Deccan Birders — Writer (Swarm subsidised gateway)</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Deccan Birders — Sighting Writer</h1>
+    <p class="muted">
+      Fresh Swarm ID users have no stamp of their own. This writer uploads through the
+      subsidised gateway (<code>https://api.gateway.ethswarm.org/</code>) using the raw
+      <code>/bytes</code> family. Uploads are blocked until capability is confirmed —
+      signing in alone never enables the upload button.
+    </p>
+
+    <section class="row">
+      <div>
+        <h2>1. Sign in</h2>
+        <button id="signin-btn" type="button">Sign in with Swarm ID (demo)</button>
+        <p id="signin-status" class="status" role="status">Not signed in.</p>
+      </div>
+      <div>
+        <h2>2. Confirm upload capability</h2>
+        <button id="capability-btn" type="button">Check upload capability</button>
+        <p id="capability-status" class="status" role="status">Capability not checked yet.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>3. Record a sighting</h2>
+      <form id="sighting-form">
+        <label>Species <input name="species" required placeholder="Indian Roller" /></label>
+        <label>Count <input name="count" type="number" min="1" step="1" value="2" required /></label>
+        <label>Location <input name="location" required placeholder="Deccan scrub" /></label>
+        <label>Observer <input name="observer" required placeholder="demo-observer" /></label>
+        <label>Observed at <input name="observedAt" placeholder="2026-01-15T07:30:00.000Z (blank = now)" /></label>
+        <label>Notes <textarea name="notes" rows="2" placeholder="Optional field notes"></textarea></label>
+        <button id="upload-btn" type="submit" disabled>Upload to Swarm</button>
+      </form>
+      <div id="upload-error" class="error" role="alert" hidden></div>
+      <div id="upload-ok" class="ok" role="status" hidden></div>
+      <p class="muted">Serialized bytes preview (must contain <code>format</code> + <code>version</code>):</p>
+      <pre id="bytes-preview" class="preview">—</pre>
+    </section>
+
+    <p class="muted">
+      Independent reader: open <code>../reader/index.html</code> (separate app, separate entrypoint).
+      It downloads through the same <code>/bytes</code> family and validates
+      <code>format</code>/<code>version</code> on its own.
+    </p>
+  </main>
+  <script type="module" src="./writer.js"></script>
+</body>
+</html>

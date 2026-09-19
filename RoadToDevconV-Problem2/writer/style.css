@@ -1,0 +1,14 @@
+body { font-family: system-ui, sans-serif; background: #f6f7f4; margin: 0; padding: 24px; color: #1a2b1a; }
+.card { max-width: 720px; margin: 0 auto; background: #fff; border-radius: 12px; padding: 24px; box-shadow: 0 4px 24px rgba(0,0,0,.08); }
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 640px) { .row { grid-template-columns: 1fr; } }
+label { display: block; margin: 8px 0; font-size: 14px; }
+input, textarea { width: 100%; padding: 8px; margin-top: 4px; border: 1px solid #cbd5cb; border-radius: 6px; }
+button { padding: 10px 14px; border-radius: 8px; border: 1px solid #2f6b2f; background: #2f6b2f; color: #fff; cursor: pointer; margin-top: 8px; }
+button[disabled] { background: #9aa89a; border-color: #9aa89a; cursor: not-allowed; }
+.status { font-size: 13px; color: #3c4a3c; }
+.error { background: #fef2f2; color: #991b1b; padding: 10px; border-radius: 8px; margin-top: 10px; font-size: 14px; }
+.ok { background: #f0fdf4; color: #14532d; padding: 10px; border-radius: 8px; margin-top: 10px; font-size: 14px; overflow-wrap: anywhere; }
+.preview { background: #0f172a; color: #e2e8f0; padding: 12px; border-radius: 8px; font-size: 12px; white-space: pre-wrap; overflow-wrap: anywhere; }
+.muted { color: #5b6b5b; font-size: 13px; }
+code { background: #eef2ee; padding: 1px 5px; border-radius: 4px; }

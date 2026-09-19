@@ -1,0 +1,10 @@
+body { font-family: system-ui, sans-serif; background: #f4f6fb; margin: 0; padding: 24px; color: #16213a; }
+.card { max-width: 680px; margin: 0 auto; background: #fff; border-radius: 12px; padding: 24px; box-shadow: 0 4px 24px rgba(0,0,0,.08); }
+label { display: block; margin: 8px 0; font-size: 14px; }
+input { width: 100%; padding: 8px; margin-top: 4px; border: 1px solid #c3cede; border-radius: 6px; font-family: ui-monospace, monospace; }
+button { padding: 10px 14px; border-radius: 8px; border: 1px solid #1d4ed8; background: #1d4ed8; color: #fff; cursor: pointer; margin-top: 8px; }
+button[disabled] { background: #93a4c8; border-color: #93a4c8; cursor: not-allowed; }
+.error { background: #fef2f2; color: #991b1b; padding: 10px; border-radius: 8px; margin-top: 10px; font-size: 14px; }
+.ok { background: #eff6ff; color: #1e3a8a; padding: 10px; border-radius: 8px; margin-top: 10px; font-size: 14px; overflow-wrap: anywhere; }
+.muted { color: #5b6b8c; font-size: 13px; }
+code { background: #eef2ff; padding: 1px 5px; border-radius: 4px; }
